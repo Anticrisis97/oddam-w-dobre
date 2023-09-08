@@ -6,6 +6,9 @@ import ZalozKonto from "./components/ZalozKonto";
 import './css/main.css'
 import './css/yellowstripe.css'
 import './css/4stepssection.css'
+import './css/aboutus.css'
+import './css/whodowehelp.css'
+import './css/contactform.css'
 
 function App() {
   return (
@@ -30,7 +33,7 @@ function App() {
               <li>Kontakt</li>
           </ul>
           <div className="top_pic">
-          <img src="./assets/topbgc.png" alt="pudło z antykami"></img>
+          <img src="./assets/topbgc.png" alt="antiques_box"></img>
           </div>
           </nav>
         <Routes>
