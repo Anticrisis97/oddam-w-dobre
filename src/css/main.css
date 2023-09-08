@@ -63,8 +63,11 @@ a, u {
 }
 
 .top_pic img {
-    max-width: 100%;
+    position: absolute;
+    max-width: 150%;
     height: auto;
+    top: -3%;
+    right: 3%;
 }
 .start_helping h1 {
     margin: 0;

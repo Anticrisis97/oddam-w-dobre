@@ -48,4 +48,7 @@
 }
 
 .signature {
+    position: relative;
+    bottom: 210%;
+    left: 110%;
 }
