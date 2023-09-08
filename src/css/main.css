@@ -1,21 +1,35 @@
 .main_container {
-    border: 3px solid black;
-    width: 1758px;
+    border: 1px solid black;
+    width: 1900px;
     height: fit-content;
     position: relative;
+    margin: 0 auto;
 }
 
 nav {
-    border: 1px solid red;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 148px;
 }
+
+a, u {
+    text-decoration: none;
+    color: #737373;
+}
+
 .login_register {
     display: flex;
     justify-content: flex-end;
-    width: fit-content;
     margin-left: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
     gap: 15px;
-    border: 1px solid blue;
     list-style: none;
+    color: #737373;
+}
+.styled_border1 {
+    padding: 6px;
+    border: .75px solid yellow;
 }
 .main_menu {
     display: flex;
@@ -24,7 +38,16 @@ nav {
     margin-left: auto;
     gap: 30px;
     list-style: none;
-    border: 1px solid black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3C3C3C;
+}
+
+.styled_border2 {
+    color: #3C3C3C;
+    border: 0.75px solid #3C3C3C;
+    padding: 9px 20px;
 }
 
 .top_pic {
@@ -34,4 +57,57 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.start_helping h1 {
+    margin: 0;
+}
+
+.start_helping h1:nth-child(2) {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.start_helping {
+    margin-right: 148px;
+    margin-top: 210px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    text-align: center;
+}
+
+.top_buttons {
+    margin-top: 65px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.top_buttons_container {
+    margin-bottom: 271px;
+}
+.top_buttons:first-child {
+    border: 0.75px solid #3C3C3C;
+    display: inline-block;
+    flex-direction: column;
+    width: 124px;
+    height: 94px;
+    padding: 13px 93px;
+    margin-right: 22px;
+}
+
+.top_buttons:last-child {
+    border: 0.75px solid #3C3C3C;
+    display: inline-block;
+    width: 208px;
+    height: 94px;
+    padding: 13px 51px;
+    margin-left: 22px;
 }

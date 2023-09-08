@@ -4,6 +4,8 @@ import Home from './components/Home';
 import Zaloguj from './components/Zaloguj'
 import ZalozKonto from "./components/ZalozKonto";
 import './css/main.css'
+import './css/yellowstripe.css'
+import './css/4stepssection.css'
 
 function App() {
   return (
@@ -15,12 +17,12 @@ function App() {
                   <Link to="/zaloguj">Zaloguj</Link>
               </li>
               <li>
-                  <Link to="/zalozkonto">Załóż konto</Link>
+                  <Link to="/zalozkonto" className="styled_border1">Załóż konto</Link>
               </li>
           </ul>
           <ul className="main_menu">
               <li>
-                  <Link to="/">Start</Link>
+                  <Link to="/" className="styled_border2">Start</Link>
               </li>
               <li>O co chodzi?</li>
               <li>O nas</li>
