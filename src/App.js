@@ -33,7 +33,7 @@ function App() {
               <li>Kontakt</li>
           </ul>
           <div className="top_pic">
-          <img src="./assets/topbgc.png" alt="antiques_box"></img>
+          <img src="./assets/Home-Hero-Image.jpg" alt="antiques_box"></img>
           </div>
           </nav>
         <Routes>

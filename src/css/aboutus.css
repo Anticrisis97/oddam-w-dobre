@@ -1,0 +1,42 @@
+.about_us_container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    background-color: #F0F1F1;
+}
+
+.about_us_pic_container,
+.about_us_text_container {
+    text-align: center;
+    height: 935px;
+    border: 1px solid black;
+}
+
+.about_us_text_container {
+    width: 958px;
+}
+
+.about_us_text_container p:nth-child(1) {
+    font-family: "Open Sans", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: #3C3C3C;
+    margin-top: 186px;
+    margin-bottom: 26px;
+}
+
+.about_us_text_container p:nth-child(3) {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #3C3C3C;
+    margin-top: 55px;
+    margin-bottom: 374.09px;
+    width: 656.9px;
+    height: 208.91px;
+}
+
+.about_us_pic_container {
+    width: 942px;
+}
