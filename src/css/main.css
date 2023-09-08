@@ -51,14 +51,21 @@ a, u {
 }
 
 .top_pic {
-    border: 1px solid purple;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 885px;
     height: 963px;
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
 }
 
+.top_pic img {
+    max-width: 100%;
+    height: auto;
+}
 .start_helping h1 {
     margin: 0;
 }

@@ -9,6 +9,8 @@ import './css/4stepssection.css'
 import './css/aboutus.css'
 import './css/whodowehelp.css'
 import './css/contactform.css'
+import antiquebox from './assets/Home-Hero-Image.jpg'
+
 
 function App() {
   return (
@@ -33,7 +35,7 @@ function App() {
               <li>Kontakt</li>
           </ul>
           <div className="top_pic">
-          <img src="./assets/Home-Hero-Image.jpg" alt="antiques_box"></img>
+          <img src={antiquebox} alt="antiques_box"></img>
           </div>
           </nav>
         <Routes>

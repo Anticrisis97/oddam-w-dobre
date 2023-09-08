@@ -9,8 +9,12 @@
 .about_us_pic_container,
 .about_us_text_container {
     text-align: center;
+    display: flex;
     height: 935px;
     border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about_us_text_container {
@@ -33,10 +37,15 @@
     color: #3C3C3C;
     margin-top: 55px;
     margin-bottom: 374.09px;
+    margin-right: 0;
     width: 656.9px;
     height: 208.91px;
 }
 
 .about_us_pic_container {
     width: 942px;
+    overflow: hidden;
+}
+
+.signature {
 }

@@ -1,11 +1,18 @@
 import React from 'react';
+import decoration from '../assets/Decoration.svg'
+import shirt from '../assets/Icon-1.svg'
+import bag from '../assets/Icon-2.svg'
+import magnifyingglass from '../assets/Icon-3.svg'
+import processicon from '../assets/Icon-4.svg'
+import people from '../assets/People.jpg'
+import signature from '../assets/Signature.svg'
 
 function Home() {
     return (
         <div>
         <div className="start_helping">
             <h1>Zacznij pomagać!</h1><h1>Oddaj niechciane rzeczy w zaufane ręce</h1>
-            <img src="../assets/Decoration.svg" alt="decoration"/>
+            <img src={decoration} alt="decoration"/>
             <div className="top_buttons_container">
                 <span className="top_buttons">ODDAJ RZECZY</span><span className="top_buttons">ZORGANIZUJ ZBIÓRKĘ</span>
             </div>
@@ -32,26 +39,30 @@ function Home() {
         </div>
             <div className="_4_steps_container">
             <p className="upper_headline">Wystarczą 4 proste kroki</p>
-            <img src='../assets/Decoration.svg' alt="decoration"></img>
+            <img src={decoration} alt="decoration"></img>
             <div className="_4_steps_grey_area">
                 <div className="_4_steps_grey_area_subcontainer">
-                    <img src='../assets/Icon-1.svg' alt='shirt photo'></img>
+                    <img src={shirt} alt='shirt photo'></img>
                     <p>Wybierz rzeczy</p>
+                    <hr></hr>
                     <p>ubrania, zabawki, sprzęt i inne</p>
                 </div>
                 <div className="_4_steps_grey_area_subcontainer">
-                    <img src='../assets/Icon-2.svg' alt='bag'></img>
+                    <img src={bag} alt='bag'></img>
                     <p>Spakuj je</p>
+                    <hr></hr>
                     <p>skorzystaj z worków na śmieci</p>
                 </div>
                 <div className="_4_steps_grey_area_subcontainer">
-                    <img src='../assets/Icon-3.svg' alt='magnyfing glass'></img>
+                    <img src={magnifyingglass} alt='magnifying glass'></img>
                     <p>Zdecyduj komu chcesz pomóc</p>
+                    <hr></hr>
                     <p className="untraceable_margin">wybierz zaufane miejsce</p>
                 </div>
                 <div className="_4_steps_grey_area_subcontainer">
-                    <img src='../assets/Icon-4.svg' alt="process icon"></img>
+                    <img src={processicon} alt="process icon"></img>
                     <p>Zamów kuriera</p>
+                    <hr></hr>
                     <p>kurier przyjedzie w dogodnym terminie</p>
                 </div>
             </div>
@@ -60,12 +71,15 @@ function Home() {
             <div className="about_us_container">
                 <div className="about_us_text_container">
                     <p>O nas</p>
-                    <img src='../assets/Decoration.svg' alt="decoration"></img>
+                    <img src={decoration} alt="decoration"></img>
                     <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.
                         Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+                    <div>
+                    <img className='signature' src={signature} alt='signature'></img>
+                    </div>
                 </div>
                 <div className="about_us_pic_container">
-                    <img src='../assets/People.jpg' alt='People'></img>
+                    <img src={people} alt='People'></img>
                 </div>
             </div>
         </div>
