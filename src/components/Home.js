@@ -10,64 +10,65 @@ import ContactForm from "./ContactForm";
 const data = {
     "fundacje": [
         {
+            "title": "Fundacja 'Dbam O Zdrowie'",
+            "subtitle": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+            "desc": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+        },
+        {
+            "title": "Fundacja 'Dla dzieci'",
+            "subtitle": "Cel i misja: Pomoc dzieciom z ubogich rodzin",
+            "desc": "ubrania, meble, zabawki"
+        },
+        {
+            "title": "Fundacja 'Bez domu'",
+            "subtitle": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+            "desc": "ubrania, jedzenie, ciepłe koce"
+        },
+        {
+            "title": "Fundacja 'Dbam O Zdrowie'",
+            "subtitle": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+            "desc": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+        },
+        {
+            "title": "Fundacja 'Dla dzieci'",
+            "subtitle": "Cel i misja: Pomoc dzieciom z ubogich rodzin",
+            "desc": "ubrania, meble, zabawki"
+        },
+        {
+            "title": "Fundacja 'Bez domu'",
+            "subtitle": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+            "desc": "ubrania, jedzenie, ciepłe koce"
+        },
+        {
+            "title": "Fundacja 'Dla dzieci'",
+            "subtitle": "Cel i misja: Pomoc dzieciom z ubogich rodzin",
+            "desc": "ubrania, meble, zabawki"
+        },
+        {
+            "title": "Fundacja 'Bez domu'",
+            "subtitle": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+            "desc": "ubrania, jedzenie, ciepłe koce"
+        },
+        {
             "title": "Fundacja Dzieciom",
             "subtitle": "Pomoc dla potrzebujących dzieci",
-            "desc": "Nasza fundacja działa na rzecz wsparcia dzieci w trudnej sytuacji życiowej. Organizujemy zbiórki, eventy i warsztaty dla najmłodszych."
+            "desc": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
         },
         {
-            "title": "Fundacja Bezdomnym",
-            "subtitle": "Wsparcie dla osób bezdomnych",
-            "desc": "Dążymy do tego, aby każda osoba bezdomna znalazła schronienie i wsparcie, które pozwoli jej wrócić do normalnego życia."
+            "title": "Fundacja 'Dbam O Zdrowie'",
+            "subtitle": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+            "desc": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
         },
         {
-            "title": "Fundacja Dzieciom",
-            "subtitle": "Pomoc dla potrzebujących dzieci",
-            "desc": "Nasza fundacja działa na rzecz wsparcia dzieci w trudnej sytuacji życiowej. Organizujemy zbiórki, eventy i warsztaty dla najmłodszych."
+            "title": "Fundacja 'Dla dzieci'",
+            "subtitle": "Cel i misja: Pomoc dzieciom z ubogich rodzin",
+            "desc": "ubrania, meble, zabawki"
         },
         {
-            "title": "Fundacja Bezdomnym",
-            "subtitle": "Wsparcie dla osób bezdomnych",
-            "desc": "Dążymy do tego, aby każda osoba bezdomna znalazła schronienie i wsparcie, które pozwoli jej wrócić do normalnego życia."
+            "title": "Fundacja 'Bez domu'",
+            "subtitle": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+            "desc": "ubrania, jedzenie, ciepłe koce"
         },
-        {
-            "title": "Fundacja Dzieciom",
-            "subtitle": "Pomoc dla potrzebujących dzieci",
-            "desc": "Nasza fundacja działa na rzecz wsparcia dzieci w trudnej sytuacji życiowej. Organizujemy zbiórki, eventy i warsztaty dla najmłodszych."
-        },
-        {
-            "title": "Fundacja Bezdomnym",
-            "subtitle": "Wsparcie dla osób bezdomnych",
-            "desc": "Dążymy do tego, aby każda osoba bezdomna znalazła schronienie i wsparcie, które pozwoli jej wrócić do normalnego życia."
-        },
-        {
-            "title": "Fundacja Dzieciom",
-            "subtitle": "Pomoc dla potrzebujących dzieci",
-            "desc": "Nasza fundacja działa na rzecz wsparcia dzieci w trudnej sytuacji życiowej. Organizujemy zbiórki, eventy i warsztaty dla najmłodszych."
-        },
-        {
-            "title": "Fundacja Bezdomnym",
-            "subtitle": "Wsparcie dla osób bezdomnych",
-            "desc": "Dążymy do tego, aby każda osoba bezdomna znalazła schronienie i wsparcie, które pozwoli jej wrócić do normalnego życia."
-        },
-        {
-            "title": "Fundacja Dzieciom",
-            "subtitle": "Pomoc dla potrzebujących dzieci",
-            "desc": "Nasza fundacja działa na rzecz wsparcia dzieci w trudnej sytuacji życiowej. Organizujemy zbiórki, eventy i warsztaty dla najmłodszych."
-        },
-        {
-            "title": "Fundacja Bezdomnym",
-            "subtitle": "Wsparcie dla osób bezdomnych",
-            "desc": "Dążymy do tego, aby każda osoba bezdomna znalazła schronienie i wsparcie, które pozwoli jej wrócić do normalnego życia."
-        },{
-            "title": "Fundacja Dzieciom",
-            "subtitle": "Pomoc dla potrzebujących dzieci",
-            "desc": "Nasza fundacja działa na rzecz wsparcia dzieci w trudnej sytuacji życiowej. Organizujemy zbiórki, eventy i warsztaty dla najmłodszych."
-        },
-        {
-            "title": "Fundacja Bezdomnym",
-            "subtitle": "Wsparcie dla osób bezdomnych",
-            "desc": "Dążymy do tego, aby każda osoba bezdomna znalazła schronienie i wsparcie, które pozwoli jej wrócić do normalnego życia."
-        }
     ],
     "organizacje": [
         {
