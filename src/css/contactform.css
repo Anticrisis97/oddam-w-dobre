@@ -1,0 +1,96 @@
+.contact_form_main_container {
+    width: 1900px;
+    height: 1026px;
+    background-image: url("../assets/Background-Contact-Form.jpg");
+    opacity: 0.3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.contact_form_container p:first-child {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.contact_form_container {
+    margin-right: 142px;
+    width: 528px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name_and_email_container {
+    display: flex;
+    flex-wrap: wrap; /* Umożliwia zawijanie elementów na nową linię */
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.name_and_email_container1,
+.name_and_email_container2 {
+    width: calc(50% - 8px);
+    margin-top: 70px;
+}
+
+.msg_container {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.msg_container input {
+    width: fit-content;
+    height: fit-content;
+}
+
+label {
+    margin-top: 0;
+    display: block;
+}
+
+label {
+    margin-top: 40px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+textarea {
+    width: 528px;
+    height: 60px;
+    border: none;
+    resize: none;
+    overflow: auto;
+    outline: none;
+    background: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+hr {
+    margin: 0;
+}
+
+.send_button {
+    margin-top: 40px;
+    width: 528px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.send-button {
+    width: 150px;
+    height: 50px;
+    font-family:"Open Sans", sans-serif ;
+    font-size: 18px;
+    color: #000000;
+}

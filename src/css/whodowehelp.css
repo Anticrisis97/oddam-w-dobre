@@ -114,8 +114,13 @@ hr {
     text-align: center;
 }
 
-.pages_numbers p span:first-child {
+.pages_numbers p span.active {
     border: 1px solid #3C3C3C;
     text-align: center;
     padding: 13px 15px;
+}
+
+p {
+    display: flex;
+    align-items: center;
 }

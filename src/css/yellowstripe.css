@@ -47,3 +47,7 @@
     margin-bottom: 86px;
 
 }
+
+.yellow_stripe_container p {
+    justify-content: center;
+}
