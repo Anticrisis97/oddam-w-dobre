@@ -1,4 +1,4 @@
-.login_container {
+.create_acc_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +44,11 @@ label {
     margin-top: 0;
 }
 
-.email_input_login, .password_input_login {
+.confirm_password_label {
+    margin-top: 0;
+}
+
+.email_input_login, .password_input_login, .password_confirm {
     margin-left: 67.25px;
     margin-right: 67.25px;
 }

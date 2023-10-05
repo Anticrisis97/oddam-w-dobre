@@ -2,37 +2,33 @@ import React, {useState} from 'react';
 import '../css/login.css'
 import decoration from '../assets/Decoration.svg'
 
-function Zaloguj() {
+function Login() {
 
-        const [email, setEmail] = useState('');
-        const [password, setPassword] = useState('');
-        const [errorEmail, setErrorEmail] = useState('');
-        const [errorPassword, setErrorPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [errorEmail, setErrorEmail] = useState('');
+    const [errorPassword, setErrorPassword] = useState('');
 
-        const handleSubmit = (e) => {
-            e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-            // Walidacja emaila
-            if (!email.includes('@')) {
-                setErrorEmail('Email musi zawierać znak @');
-            } else {
-                setErrorEmail('');
-            }
+        if (!email.includes('@')) {
+            setErrorEmail('Email musi zawierać znak @');
+        } else {
+            setErrorEmail('');
+        }
 
-            // Walidacja hasła
-            if (password.length < 6) {
-                setErrorPassword('Hasło musi mieć co najmniej 6 znaków');
-            } else {
-                setErrorPassword('');
-            }
+        if (password.length < 6) {
+            setErrorPassword('Hasło musi mieć co najmniej 6 znaków');
+        } else {
+            setErrorPassword('');
+        }
 
-            // Jeśli walidacja przeszła, można wysłać dane
-            if (email.includes('@') && password.length >= 6) {
-                // Tutaj możesz dodać kod do wysłania danych
-                console.log('Email:', email);
-                console.log('Hasło:', password);
-            }
-        };
+        if (email.includes('@') && password.length >= 6) {
+            console.log('Email:', email);
+            console.log('Hasło:', password);
+        }
+    };
 
     return (
         <div className='login_container'>
@@ -61,16 +57,15 @@ function Zaloguj() {
                         <hr></hr>
                         <p className="error">{errorPassword}</p>
                     </div>
-                </form>
-                </div>
                     <div className='login_buttons_container'>
-                    <button type="submit" className="create_acc_button">Załóż konto</button>
+                        <button type="submit" className="create_acc_button">Załóż konto</button>
                         <button type="submit" className="create_acc_button">Zaloguj się</button>
-                </div>
-
-
+                    </div>
+                </form>
+            </div>
         </div>
     );
 }
 
-export default Zaloguj;
+
+export default Login;
