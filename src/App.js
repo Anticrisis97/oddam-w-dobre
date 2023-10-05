@@ -38,7 +38,7 @@ function App() {
               <li>Kontakt</li>
           </ul>
           <div className={path.pathname !== "/" && "top_pic"}>
-          <img src={antiquebox} alt="antiques_box"></img>
+          <img className="top_picc" src={antiquebox} alt="antiques_box"></img>
           </div>
           </nav>
         <Routes>
