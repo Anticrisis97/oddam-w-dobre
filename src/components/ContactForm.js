@@ -11,7 +11,6 @@ function ContactForm () {
                 <p>Skontaktuj się z nami</p>
                 <img src={decoration} alt='decoration'></img>
                 <div className='name_and_email_container'>
-                    <form onSubmit={}>
                 <div className='name_and_email_container1'>
                     <label htmlFor="username">Wpisz swoje imię</label>
                     <input
@@ -44,7 +43,6 @@ function ContactForm () {
                              consequat.'/>
                         <hr></hr>
                     </div>
-                </form>
                 </div>
                 <div className='send_button'>
                     <button type="button" id="sendButton" className="send-button">Wyślij</button>

@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+}
+
+.logout_container {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

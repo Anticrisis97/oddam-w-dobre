@@ -1,8 +1,8 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Link, Route, Routes, useLocation} from 'react-router-dom';
 import Home from './components/Home';
-import Zaloguj from './components/Zaloguj'
-import ZalozKonto from "./components/ZalozKonto";
+import Login from './components/Login'
+import CreateAccount from "./components/CreateAccount";
 import './css/main.css'
 import './css/yellowstripe.css'
 import './css/4stepssection.css'
@@ -10,9 +10,12 @@ import './css/aboutus.css'
 import './css/whodowehelp.css'
 import './css/contactform.css'
 import antiquebox from './assets/Home-Hero-Image.jpg'
+import Logout from "./components/Logout";
 
 
 function App() {
+    const path = useLocation();
+    console.log(path)
   return (
       <div className="main_container">
       <>
@@ -34,14 +37,15 @@ function App() {
               <li>Fundacja i organizacje</li>
               <li>Kontakt</li>
           </ul>
-          <div className="top_pic">
-          <img src={antiquebox} alt="antiques_box"></img>
+          <div className={path.pathname !== "/" && "top_pic"}>
+          <img className="top_picc" src={antiquebox} alt="antiques_box"></img>
           </div>
           </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-            <Route path="/zaloguj" element={<Zaloguj />} />
-            <Route path="/zalozkonto" element={<ZalozKonto />} />
+            <Route path="/zaloguj" element={<Login />} />
+            <Route path="/zalozkonto" element={<CreateAccount />} />
+            <Route path="/wyloguj" element={<Logout /> } />
         </Routes>
           </>
       </div>

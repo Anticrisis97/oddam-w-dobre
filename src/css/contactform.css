@@ -2,11 +2,24 @@
     width: 1900px;
     height: 1026px;
     background-image: url("../assets/Background-Contact-Form.jpg");
-    opacity: 0.3;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+.contact_form_main_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: white;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .contact_form_container p:first-child {
@@ -19,6 +32,8 @@
 
 .contact_form_container {
     margin-right: 142px;
+    position: relative;
+    z-index: 1;
     width: 528px;
     height: auto;
     display: flex;

@@ -1,9 +1,15 @@
 .main_container {
-    border: 1px solid black;
     width: 1900px;
     height: fit-content;
     position: relative;
     margin: 0 auto;
+}
+
+.main_container .top_picc {
+    position: absolute;
+    z-index: -1;
+    right: 40%;
+    top: -1%;
 }
 
 nav {
@@ -50,25 +56,6 @@ a, u {
     padding: 9px 20px;
 }
 
-.top_pic {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 885px;
-    height: 963px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.top_pic img {
-    position: absolute;
-    max-width: 150%;
-    height: auto;
-    top: -3%;
-    right: 3%;
-}
 .start_helping h1 {
     margin: 0;
 }
