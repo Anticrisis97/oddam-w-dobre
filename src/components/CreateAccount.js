@@ -42,8 +42,8 @@ import decoration from '../assets/Decoration.svg';
             <div className='login_container'>
                 <h1>Załóż konto</h1>
                 <img className='decor_login' src={decoration} alt='decoration' />
+                <form onSubmit={handleSubmit}>
                 <div className='inputs_container'>
-                    <form onSubmit={handleSubmit}>
                         <div className='email_input_login'>
                             <label>Email:</label>
                             <input
@@ -75,9 +75,11 @@ import decoration from '../assets/Decoration.svg';
                             <hr></hr>
                             <p className="error">{errorConfirmPassword}</p>
                         </div>
-                        <button type="submit" className="create_acc_button">Załóż konto</button>
-                    </form>
                 </div>
+                    <div className='create_acc_button_last'>
+                <button type="submit" className="create_acc_button">Załóż konto</button>
+                    </div>
+            </form>
             </div>
         );
     }

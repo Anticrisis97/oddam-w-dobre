@@ -18,14 +18,15 @@ h1 {
 
 .decor_login {
     opacity: 1;
-    margin-bottom: 67px;
+    margin-bottom: 20px;
 }
 
 .inputs_container {
     background-color: #F0F1F1;
     width: 384.5px;
-    height: 235px;
+    height: fit-content;
     margin-bottom: 53px;
+    padding-bottom: 1px;
 }
 
 input {
@@ -38,6 +39,7 @@ label {
     font-size: 14px;
     color: #3C3C3C;
     font-weight: bold;
+    padding-top: 30px;
 }
 
 .password_label {
@@ -55,11 +57,22 @@ label {
 
 
 .login_buttons_container {
-    width: 504px;
+    width: 382px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 }
-.create_acc_button {
+.create_acc_button_last {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    border: 0.75px solid #3C3C3C;
+    padding: 9px 20px;
+    color: #3C3C3C;
 }

@@ -34,8 +34,8 @@ function Login() {
         <div className='login_container'>
             <h1>Zaloguj się</h1>
             <img className='decor_login' src={decoration} alt='decoration'></img>
+            <form onSubmit={handleSubmit}>
             <div className='inputs_container'>
-                <form onSubmit={handleSubmit}>
                     <div className='email_input_login'>
                         <label>Email:</label>
                         <input
@@ -57,12 +57,12 @@ function Login() {
                         <hr></hr>
                         <p className="error">{errorPassword}</p>
                     </div>
-                    <div className='login_buttons_container'>
-                        <button type="submit" className="create_acc_button">Załóż konto</button>
-                        <button type="submit" className="create_acc_button">Zaloguj się</button>
-                    </div>
-                </form>
             </div>
+            <div className='login_buttons_container'>
+                <button type="submit" className="create_acc_button">Załóż konto</button>
+                <button type="submit" className="create_acc_button">Zaloguj się</button>
+            </div>
+        </form>
         </div>
     );
 }

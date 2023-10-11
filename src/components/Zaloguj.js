@@ -41,8 +41,10 @@ function Zaloguj() {
                     />
                 </div>
                 <div>
-                    <button type="submit">Zaloguj się</button>
                 </div>
+            <div>
+                <button type="submit">Zaloguj się</button>
+            </div>
             </form>
         </div>
     );
