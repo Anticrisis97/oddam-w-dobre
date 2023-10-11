@@ -9,8 +9,11 @@ function ContactForm() {
         message: '',
     });
 
-    const [error, setError] = useState('');
-    const [submitted, setSubmitted] = useState(false);
+    const [errors, setErrors] = useState({
+        username: '',
+        email: '',
+        message: '',
+    });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -19,24 +22,37 @@ function ContactForm() {
             [name]: value,
         });
 
-        if (submitted && name === "username" && value.length < 1) {
-            setError('XYZ 123');
-        } else {
-            setError('');
-        }
+        setErrors({
+            ...errors,
+            [name]: '',
+        });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        const newErrors = {};
 
         if (formData.username.length < 1) {
-            setError('XYZ 123');
-        } else {
-            setError('');
-            // Obsługa przesłania formularza
-            // Przykład: console.log(formData);
+            newErrors.username = 'To pole jest wymagane.';
         }
+
+        if (
+            formData.email.length === 0 ||
+            formData.email.indexOf('@') === -1 || //
+            /[@#$%^&*()=+:;\/?,]/.test(formData.email)
+        ) {
+            newErrors.email = 'Pole jest puste, zawiera niepoprawne znaki lub nie zawiera "@".';
+        }
+
+        if (formData.message.length < 1) {
+            newErrors.message = 'To pole jest wymagane';
+        }
+
+        if (formData.message.length < 120) {
+            newErrors.message = 'Wiadomość musi zawierać minimalnie 120 znaków'
+        }
+
+        setErrors(newErrors);
     };
 
     return (
@@ -57,7 +73,7 @@ function ContactForm() {
                                 onChange={handleChange}
                             />
                             <hr></hr>
-                            {submitted && error && <p>{error}</p>}
+                            {errors.username && <p>{errors.username}</p>}
                         </div>
                         <div className='name_and_email_container2'>
                             <label htmlFor="email">Wpisz swój email:</label>
@@ -70,6 +86,7 @@ function ContactForm() {
                                 onChange={handleChange}
                             />
                             <hr></hr>
+                            {errors.email && <p>{errors.email}</p>}
                         </div>
                         <div className='msg_container'>
                             <label htmlFor="message">Wpisz swoją wiadomość:</label>
@@ -81,6 +98,7 @@ function ContactForm() {
                                 onChange={handleChange}
                             />
                             <hr></hr>
+                            {errors.message && <p>{errors.message}</p>}
                         </div>
                         <div className='send_button'>
                             <button type="submit" id="sendButton" className="send-button">Wyślij</button>
