@@ -1,6 +1,6 @@
-import decoration from "../assets/Decoration.svg";
-import signature from "../assets/Signature.svg";
-import people from "../assets/People.jpg";
+import decoration from "./../assets/Decoration.svg";
+import signature from "./../assets/Signature.svg";
+import people from "./../assets/People.jpg";
 import React from "react";
 
 function AboutUs () {
